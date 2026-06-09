@@ -107,7 +107,7 @@ function onSubmit(): void {
     </div>
 
     <div>
-      <label class="mb-2 block text-sm font-medium text-slate-700">Priority</label>
+      <label class="mb-2 block text-sm font-medium text-slate-700" for="priority">Priority</label>
       <div class="flex gap-2">
         <button type="button"
           class="inline-flex flex-1 items-center justify-center gap-2 rounded-xl border px-4 py-3 text-sm font-medium"
@@ -131,8 +131,8 @@ function onSubmit(): void {
     </div>
 
     <div>
-      <label class="mb-2 block text-sm font-medium text-slate-700">Status</label>
-      <select v-model="status"
+      <label class="mb-2 block text-sm font-medium text-slate-700" for="status">Status</label>
+      <select v-model="status" name="status"
         class="flex h-12 w-full items-center rounded-xl border border-neutral-200 bg-white px-4 text-sm text-slate-700">
         <option value="todo">To Do</option>
         <option value="in-progress">In Progress</option>
@@ -141,21 +141,16 @@ function onSubmit(): void {
     </div>
 
     <div>
-      <label class="mb-2 block text-sm font-medium text-slate-700">Due date</label>
+      <label class="mb-2 block text-sm font-medium text-slate-700" for="deadline">Due date</label>
       <div class="relative">
-        <input v-model="dueDate" type="date"
-          class="h-12 w-full rounded-xl border border-neutral-200 px-4 pr-12 text-sm text-slate-900" />
-        <svg class="pointer-events-none absolute right-4 top-1/2 h-5 w-5 -translate-y-1/2 text-slate-400" fill="none"
-          viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round"
-            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
-        </svg>
+        <input v-model="dueDate" type="date" name="deadline"
+          class="h-12 w-full rounded-xl border border-neutral-200 px-4 pr-4 text-sm text-slate-900" />
       </div>
     </div>
 
     <div>
-      <label class="mb-2 block text-sm font-medium text-slate-700">Notes (optional)</label>
-      <textarea v-model="description" placeholder="Add notes..." rows="4"
+      <label class="mb-2 block text-sm font-medium text-slate-700" for="descr">Notes (optional)</label>
+      <textarea v-model="description" placeholder="Add notes..." rows="4" name="descr"
         class="min-h-[120px] w-full resize-none rounded-xl border border-neutral-200 p-4 text-sm text-slate-900 placeholder:text-slate-400" />
     </div>
 
