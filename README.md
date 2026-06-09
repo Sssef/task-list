@@ -1,6 +1,6 @@
 # Task Tracker
 
-A simple task manager application built with Vue 3, TypeScript, Pinia, Tailwind CSS, and Vite.
+A simple AI-generated task manager application built with Vue 3, TypeScript, Pinia, Tailwind CSS, and Vite.
 
 ## Tech Stack
 
