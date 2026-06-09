@@ -8,6 +8,7 @@
     "noEmit": true,
     "allowImportingTsExtensions": true,
     "noEmitOnError": true,
+    "ignoreDeprecations": "6.0",
     "paths": {
       "@/*": [
         "src/*"
