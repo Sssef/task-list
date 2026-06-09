@@ -4,6 +4,8 @@ import App from './App.vue'
 import { useTaskStore } from '@/stores/taskStore'
 import { useUiStore } from '@/stores/uiStore'
 
+import './style.css'
+
 const app = createApp(App)
 const pinia = createPinia()
 

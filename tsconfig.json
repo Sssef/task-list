@@ -9,6 +9,9 @@
     "allowImportingTsExtensions": true,
     "noEmitOnError": true,
     "ignoreDeprecations": "6.0",
+    "types": [
+      "vite/client"
+    ],
     "paths": {
       "@/*": [
         "src/*"
@@ -16,6 +19,9 @@
     }
   },
   "include": [
-    "src"
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue"
   ]
 }

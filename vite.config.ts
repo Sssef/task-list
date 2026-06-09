@@ -5,14 +5,15 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [vue(),
-    tailwindcss()],
+  plugins: [
+    vue(),
+    tailwindcss()
+  ],
   resolve: {
     tsconfigPaths: true,
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  base: process.env.VITE_BASE_URL ?? '/task-list'
-
+  base: '/task-list/'
 })
